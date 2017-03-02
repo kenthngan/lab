@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="shoppingcart.css">
+</head>
+<body>
+<div id="site">
+<header id="Head">
+<h1><center><font face="monospace">Laptops Market</h1></center>
+</header>
+
+ <div id="content">
+<form name='form' id='form'>
+  Product name：
+  <input type='text' name='Model' id='productname' /> 
+  Product price(USD)：
+  <input type='text' name='Price' id='productprice' />
+  <p>
+		<input type='button' class="btn" name='submit' value="Add New Item" id="add" />
+	</p>
+	 </form>	
+	</div>
+	
+	 <div id="content1" style="display: none">
+		 <div id="products">
+        <ul>
+				<li>
+		 <div class="product-description">
+	 <center>
+	 <p>
+		<h6>New Product :</h6>
+  <input type="text" name="output" id='Output' readonly="readonly"/>
+	</p><p>
+		 <h6>Price(USD) :</h6>
+  <input type="text" name="output2" id='Output2' readonly="readonly" />
+	</p>
+					 <p><center><input type="submit" value="Add Item" id="addnew" class="btn"/></center></p>
+	</div>
+			 </div>
+			 
+		 
+			 </center>
+</form>
+			 </li> 
+	 
+	</div>
+
+	 <div id="content">
+		<div id="products">
+        <ul>
+				<li>
+<center>
+<img src="HPLaptop1.jpg" width="100" height="100">
+</center>
+    <div class="product-description">
+     <h3 class="product-name">HP - 15.6" Laptop</h3><p>
+			
+			</p>
+			<p class="product-detail">AMD A6-Series - 4GB Memory - 500GB Hard Drive - Black</p>
+     <p class="product-price">USD $260</p>
+    
+     <p><center><input type="submit" value="Add Item" id="addHPLaptop1" class="btn"/></center></p>
+     
+
+	</div>
+    </li>
+  <li>  
+  
+<center>
+<img src="HPLaptop2.jpg" width="100" height="100">
+</center>
+ <div class="product-description">
+     <h3 class="product-name">HP - Pavilion x360</h3><p>
+	 
+	 </p>
+	   <p class="product-detail">
+		 13.3" Touch-Screen Laptop - Intel Core i3 - 6GB Memory - 500GB Hard Drive - Natural silver, Ash silver
+	   </p>
+     <p class="product-price">USD $450</p>
+     <p><center><input type="submit" value="Add Item" id="addHPLaptop2" class="btn"/></center></p>
+     
+
+	</div>
+    </li>
+
+			<li>
+<center>
+<img src="LenovoLaptop1.jpg" width="100" height="100">
+</center>
+    <div class="product-description">
+     <h3 class="product-name">Lenovo - Ideapad 110s</h3><p>
+			
+			</p>
+			<p class="product-detail">11.6" Laptop - Intel Celeron - 2GB Memory - 32GB eMMC Flash Memory - White</p>
+     <p class="product-price">USD $170</p>
+    
+     <p><center><input type="submit" value="Add Item" id="addLenovoLaptop1" class="btn"/></center></p>
+     
+
+	</div>
+    </li>	 
+					</ul>
+
+	<div>
+		
+			</div>
+    
+ 
+      <center><h2>Basket</h2></center>
+      <table class="shopping-cart">
+			  <thead>
+				<tr>
+					<th scope="col" >List of items</th>
+					<th scope="col" >Total items</th>
+					<th scope="col" colspan="2">Price</th>
+				</tr>
+                    <th scope="col" id="name"></th>
+					<th scope="col" id="length"></th>
+					<th scope="col" colspan="2" id="price"></th>
+			  </thead>
+              <tbody>
+			  
+			  </tbody>
+			</table>
+         
+
+
+<p><center>
+<input type="submit" value="Show Basket" id="show" class="btn"/>
+</center>
+</div>
+<script src="shoppingcart.js"></script>
+
+
+
+
+</body>
+</html>
