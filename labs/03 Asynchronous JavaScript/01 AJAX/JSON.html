@@ -6,20 +6,37 @@
   <script>
 
 var fidoString = '{ "name": "Fido", "breed": "Mixed", "weight": 38 }';
-var fido = JSON.parse(fidoString);
-console.log("We have made a dog out of a string! " + fido.name);
+var fido2 = JSON.parse(fidoString);
 
 
+		
+console.log("We have made a dog out of a string! " + fido2.name);
+		
+
+		
 var fido2 = {
 	name: "Fido",
 	breed: "Mixed",
 	weight: 38
 };
+		
+function a(){
+	var fidoString = '{ "name": "Fido", "breed": "Mixed", "weight": 38 }';
+var fido2 = JSON.parse(fidoString);
+var employeeName = fido2.name;
+document.createTextNode(employeeName);	
+}		
+		
+		
 var fidoString = JSON.stringify(fido2);
+
 console.log("We made a string from a dog! " + fidoString);
 
   </script>
 </head>
 <body>
+	<div id="a">
+		
+	</div>
 </body>
 </html>

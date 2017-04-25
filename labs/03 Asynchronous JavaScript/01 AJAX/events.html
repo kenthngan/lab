@@ -12,9 +12,9 @@
 window.onload = function() {
 	var div = document.getElementById("clickme");
 	if (div.addEventListener) {
-		div.addEventListener("click", handleClick, false);
+		div.addEventListener("mouseover", handleClick, false);
 	} else if (div.attachEvent) {
-		div.attachEvent("click", handleClick);
+		div.attachEvent("mouseover", handleClick);
 	}
 };
 
@@ -32,6 +32,7 @@ function handleClick(e) {
   </script>
 </head>
 <body>
-<span id="clickme">Click me!</span>
+<button id="clickme" >click me
+	</button>
 </body>
 </html>
